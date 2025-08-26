@@ -4,11 +4,11 @@ install:
 
 install-aws:
 	pip install --upgrade pip &&\
-	pip install - r requirements-aws.txt
+	pip install -r requirements-aws.txt
 
 install-amazon-linux:
 	pip install --upgrade pip &&\
-	pip install - r requirements-amazon-linux.txt
+	pip install -r requirements-amazon-linux.txt
 
 lint:
 	pylint --disable=R,C hello.py
@@ -17,4 +17,4 @@ format:
 	black *.py
 
 test:
-	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv test_hello.py
